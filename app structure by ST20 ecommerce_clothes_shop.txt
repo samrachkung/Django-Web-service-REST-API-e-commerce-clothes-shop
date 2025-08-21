@@ -1,0 +1,123 @@
+install Project
+
+pip install -r requirements.txt
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver
+===========
+host test api 
+
+API root: http://localhost:8000/api/
+Admin panel: http://localhost:8000/admin/
+API documentation: http://localhost:8000/api/swagger/
+
+==========
+
+Superuser
+
+Name : admin
+
+Email : admin@gmail.com
+
+Password : Admin12345678
+
+============
+
+Project Structure 
+ecommerce_shop/
+│
+├── venv/                      # Virtual environment
+├── ecommerce_config/          # Project configuration
+│   ├── __init__.py
+│   ├── settings.py           # Django settings
+│   ├── urls.py              # Main URL configuration
+│   ├── asgi.py              # ASGI configuration
+│   └── wsgi.py              # WSGI configuration
+│
+├── api/                       # API app
+│   ├── __init__.py
+│   ├── apps.py
+│   ├── urls.py              # API URL routing
+│   ├── views.py             # API views and endpoints
+│   ├── serializers.py       # API-specific serializers
+│   ├── permissions.py       # Custom permissions
+│   ├── pagination.py        # Custom pagination classes
+│   └── tests.py            # API tests
+│
+├── accounts/                  # User management app
+│   ├── migrations/          # Database migrations
+│   ├── __init__.py
+│   ├── admin.py            # Admin interface configuration
+│   ├── apps.py             # App configuration
+│   ├── models.py           # User models
+│   ├── serializers.py      # User serializers
+│   ├── views.py            # User views
+│   └── urls.py             # User URLs
+│
+├── products/                  # Product management app
+│   ├── migrations/
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py           # Product, Category, Variant models
+│   ├── serializers.py      # Product serializers
+│   ├── views.py            # Product views
+│   └── urls.py
+│
+├── orders/                    # Order management app
+│   ├── migrations/
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py           # Order, OrderItem models
+│   ├── serializers.py
+│   ├── views.py
+│   └── urls.py
+│
+├── cart/                      # Shopping cart app
+│   ├── migrations/
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py           # Cart, CartItem models
+│   ├── serializers.py
+│   ├── views.py
+│   └── urls.py
+│
+├── reviews/                   # Product reviews app
+│   ├── migrations/
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py           # Review, Rating models
+│   ├── serializers.py
+│   ├── views.py
+│   └── urls.py
+│
+├── media/                     # User uploaded files
+│   └── products/             # Product images
+│
+├── static/                    # Static files
+│   ├── css/
+│   ├── js/
+│   └── images/
+│
+├── templates/                 # HTML templates (if needed)
+│   └── email/               # Email templates
+│
+├── fixtures/                  # Sample data
+│   └── sample_data.json
+│
+├── tests/                     # Test suite
+│   ├── test_products.py
+│   ├── test_orders.py
+│   ├── test_cart.py
+│   └── test_auth.py
+│
+├── manage.py                  # Django management script
+├── requirements.txt           # Python dependencies
+├── .env                      # Environment variables
+├── .env.example              # Example environment variables
+├── .gitignore                # Git ignore file
+└── README.md                 # This file

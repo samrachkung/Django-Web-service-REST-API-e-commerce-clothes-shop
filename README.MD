@@ -462,7 +462,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- **Kung Samrach** - Initial work - [YourGitHub](https://github.com/samrachkung)
+- **Kung Samrach** - Initial work - [myprofile](https://github.com/samrachkung)
 
 ## 🙏 Acknowledgments
 

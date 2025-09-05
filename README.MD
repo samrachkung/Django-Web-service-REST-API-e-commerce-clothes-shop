@@ -309,6 +309,72 @@ ecommerce_shop/
 ├── .env.example              # Example environment variables
 ├── .gitignore                # Git ignore file
 └── README.md                 # This file
+
+
+
+Moblie app
+
+lib/
+├── main.dart
+├── app.dart
+├── config/
+│   ├── routes.dart
+│   ├── theme.dart
+│   └── constants.dart
+├── models/
+│   ├── product.dart
+│   ├── category.dart
+│   ├── cart_item.dart
+│   ├── order.dart
+│   ├── user.dart
+│   └── wishlist.dart
+├── services/
+│   ├── api_service.dart
+│   ├── auth_service.dart
+│   ├── product_service.dart
+│   ├── cart_service.dart
+│   └── order_service.dart
+├── providers/
+│   ├── auth_provider.dart
+│   ├── cart_provider.dart
+│   ├── product_provider.dart
+│   └── wishlist_provider.dart
+├── screens/
+│   ├── home/
+│   │   ├── home_screen.dart
+│   │   └── widgets/
+│   │       ├── product_slider.dart
+│   │       ├── discount_banner.dart
+│   │       └── product_grid.dart
+│   ├── shop/
+│   │   ├── shop_screen.dart
+│   │   └── catalog_screen.dart
+│   ├── product/
+│   │   ├── product_detail_modal.dart
+│   │   └── product_card.dart
+│   ├── cart/
+│   │   ├── cart_screen.dart
+│   │   └── cart_item_tile.dart
+│   ├── checkout/
+│   │   └── checkout_screen.dart
+│   ├── invoice/
+│   │   └── invoice_screen.dart
+│   ├── wishlist/
+│   │   └── wishlist_screen.dart
+│   ├── about/
+│   │   └── about_screen.dart
+│   ├── contact/
+│   │   └── contact_screen.dart
+│   └── track_order/
+│       └── track_order_screen.dart
+├── widgets/
+│   ├── custom_app_bar.dart
+│   ├── loading_widget.dart
+│   ├── error_widget.dart
+│   └── custom_button.dart
+└── utils/
+    ├── helpers.dart
+    └── validators.dart
 ```
 
 ## 🔧 Configuration
@@ -462,7 +528,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- **Kung Samrach** - Initial work - [YourGitHub](https://github.com/samrachkung)
+- **Kung Samrach** - Initial work - [myprofile](https://github.com/samrachkung)
 
 ## 🙏 Acknowledgments
 
